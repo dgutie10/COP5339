@@ -1,0 +1,4 @@
+1
+Min number is: 1
+Max number is: 1
+Average is: 1
