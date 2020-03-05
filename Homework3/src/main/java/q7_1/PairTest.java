@@ -17,7 +17,7 @@ public class PairTest {
         Pair[] secrets = new Pair[2];
         secrets[0] = pair;
         secrets[1] = pair1;
-//        secrets[2] = clone;
+
         ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("PairTest.dat"));
         out.writeObject(secrets);
         out.close();
