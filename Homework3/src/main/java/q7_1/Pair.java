@@ -2,7 +2,7 @@ package q7_1;
 
 import java.io.Serializable;
 
-public class Pair<K,V> implements Serializable {
+public class Pair<K,V> implements Serializable, Cloneable {
 
     private K key;
     private V value;
