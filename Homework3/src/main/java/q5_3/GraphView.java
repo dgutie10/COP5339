@@ -19,7 +19,9 @@ public class GraphView {
         mainPanel.setLayout(new GridLayout(4, 1));
 
         JPanel instructions = new JPanel();
-        instructions.add(new JLabel("Keep Numbers [1,100]"));
+        JLabel instruction = new JLabel("Keep Numbers [1,100]");
+        instruction.setHorizontalAlignment(JLabel.LEFT);
+        instructions.add(instruction);
         mainPanel.add(instructions);
 
         for (int x = 0; x < colors.length; x++){
@@ -31,7 +33,6 @@ public class GraphView {
 
 
         frame.add(mainPanel);
-        System.out.println("Test");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }

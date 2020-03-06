@@ -8,6 +8,14 @@ public class Manager extends Employee {
     public double getSalary() { return super.getSalary() + bonus; } // overrides Employee method
     public String toString(){
         return super.toString() +
-            "\nBonus: " + bonus;
+            "\n[Total Salary: " + getSalary() + "]";
+    }
+
+    public static void main(String[] args) {
+        Manager manager = new Manager("Doe, Joe");
+        manager.setSalary(100000);
+        manager.setBonus(20000);
+        System.out.println(manager.toString());
+
     }
 }

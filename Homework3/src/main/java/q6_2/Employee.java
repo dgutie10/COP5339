@@ -9,8 +9,9 @@ public class Employee {
     public String getName() { return name; }
     public double getSalary() { return salary; }
     public String toString (){
-        return "\n***** Employee Info *****" +
-                "\nName: " + name +
-                "\nSalary: " + salary;
+        return "\n ***** Employee Info *****" +
+                "\n[Name: " + name + "]" +
+                "\n[Base Salary: " + salary +
+                "]";
     }
 }

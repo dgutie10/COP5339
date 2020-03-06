@@ -10,5 +10,6 @@ public class ToolTest {
         toolbox.get("Dry").use();
         toolbox.get("Number 2").use();
         toolbox.get("Metric").use();
+        toolbox.get("Test");
     }
 }
