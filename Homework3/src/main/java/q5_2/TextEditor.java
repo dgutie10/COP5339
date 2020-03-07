@@ -7,7 +7,5 @@ public class TextEditor {
     private HashMap<String, SpellCheck> dictionaries =  new HashMap<>();
     private String initialLanguage = "English";
 
-//    public TextEditor(){
-//        dictionaries.put()
-//    }
+    public void addDictionary(SpellCheckImpl spellCheck, String languageName){}
 }

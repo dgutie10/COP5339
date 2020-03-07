@@ -3,6 +3,7 @@ package q5_4;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
+import java.awt.geom.GeneralPath;
 
 public class ColorView {
 
@@ -17,12 +18,11 @@ public class ColorView {
         mainPanel.setLayout(new GridLayout(2, 1));
 
         JPanel panel = new JPanel();
-        panel.setLayout(new FlowLayout());
+        panel.setLayout(new BorderLayout());
         icon = new ColorIcon();
         JLabel iconLabel =new JLabel(icon);
         panel.add(iconLabel);
-        mainPanel.add(panel);
-
+        mainPanel.add(panel, BorderLayout.CENTER);
 
         JPanel sliders = new JPanel();
         sliders.setLayout(new GridLayout(3,1));

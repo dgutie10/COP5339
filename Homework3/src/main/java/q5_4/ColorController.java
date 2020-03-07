@@ -17,7 +17,6 @@ public class ColorController implements ChangeListener {
     }
 
     public void stateChanged(ChangeEvent e) {
-        System.out.println(color + ":" + slider.getValue());
         colorModel.updateColor(color, slider.getValue());
     }
 }
